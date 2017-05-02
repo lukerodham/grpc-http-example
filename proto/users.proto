@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package users;
 
-option go_package = "github.com/sipsynergy/proto-go/users";
+option go_package = "github.com/lrodham/grpc-http-example/proto-go/users";
 
 import "organisations.proto";
 

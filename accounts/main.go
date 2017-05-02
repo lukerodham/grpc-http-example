@@ -5,9 +5,9 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+	"github.com/lrodham/grpc-http-example/proto-go/organisations"
+	"github.com/lrodham/grpc-http-example/proto-go/users"
 	"github.com/micro/go-micro"
-	"github.com/sipsynergy/proto-go/organisations"
-	"github.com/sipsynergy/proto-go/users"
 	"gopkg.in/gin-gonic/gin.v1"
 )
 

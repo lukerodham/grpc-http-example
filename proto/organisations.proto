@@ -2,10 +2,7 @@ syntax = "proto3";
 
 package organisations;
 
-option go_package = "github.com/sipsynergy/proto-go/organisations";
-
-service Organisations {
-}
+option go_package = "github.com/lrodham/grpc-http-example/proto-go/organisations";
 
 message Organisation {
     // @inject_tag: jsonapi:"primary,organisation"

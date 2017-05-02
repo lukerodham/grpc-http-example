@@ -8,9 +8,9 @@ import (
 	"golang.org/x/net/context"
 
 	"github.com/google/jsonapi"
+	"github.com/lrodham/grpc-http-example/proto-go/users"
 	micro "github.com/micro/go-micro"
 	"github.com/sipsynergy/go-sipsynergy/utils"
-	users "github.com/sipsynergy/proto-go/users"
 	"golang.org/x/crypto/bcrypt"
 	"gopkg.in/gin-gonic/gin.v1"
 )

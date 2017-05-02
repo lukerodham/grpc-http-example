@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
+	"github.com/lrodham/grpc-http-example/proto-go/users"
 	"github.com/micro/go-micro"
-	"github.com/sipsynergy/proto-go/users"
 	"golang.org/x/net/context"
 )
 
