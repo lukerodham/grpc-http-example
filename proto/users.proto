@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package users;
+
+option go_package = "github.com/sipsynergy/proto-go/users";
+
+import "organisations.proto";
+
+service Users {
+    rpc ListAll(Request) returns (ListResponse) {}
+    rpc Show (ShowRequest) returns (SingleResponse) {}
+}
+
+message User {
+    // @inject_tag: jsonapi:"primary,user"
+    string ID = 1;
+    // @inject_tag: jsonapi:"attr,name"
+    string name = 2;
+    // @inject_tag: jsonapi:"attr,email"
+    string email = 3;
+    string password = 4;
+    // @inject_tag: jsonapi:"attr,role"
+    string role = 5;
+    // @inject_tag: jsonapi:"attr,statusId"
+    int64 statusID = 6;
+    // @inject_tag: jsonapi:"attr,organisationId"
+    string organisationID = 7;
+    // @inject_tag: gorm:"ForeignKey:OrganisationId" jsonapi:"relation,organisation"
+    organisations.Organisation organisation = 8;
+}
+
+message SingleResponse {
+    User user = 1;
+}
+
+message ListResponse {
+    repeated User users = 1;
+}
+
+message ShowRequest {
+    string ID = 1;
+}
+
+message Request {}

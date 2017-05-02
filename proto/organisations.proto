@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package organisations;
+
+option go_package = "github.com/sipsynergy/proto-go/organisations";
+
+service Organisations {
+}
+
+message Organisation {
+    // @inject_tag: jsonapi:"primary,organisation"
+    string ID = 1;
+    // @inject_tag: jsonapi:"attr,displayName"
+    string displayName = 2;
+    // @inject_tag: jsonapi:"attr,registeredName"
+    string registeredName = 3;
+    // @inject_tag: jsonapi:"attr,country"
+    string country = 4;
+    // @inject_tag: jsonapi:"attr,currency"
+    string currency = 5;
+    // @inject_tag: jsonapi:"attr,companyNumber"
+    int64 companyNumber = 6;
+    // @inject_tag: jsonapi:"attr,sageReference"
+    string sageReference = 7;
+    // @inject_tag: jsonapi:"attr,brandHexColor"
+    string brandHexColor = 8;
+    // @inject_tag: jsonapi:"attr,brandLogoId"
+    string brandLogoID = 9;
+    // @inject_tag: jsonapi:"attr,role"
+    string role = 10;
+    // @inject_tag: jsonapi:"attr,managerId"
+    string managerID = 11;
+}
