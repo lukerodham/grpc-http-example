@@ -1,18 +1,18 @@
-package: github.com/sipsynergy/accounts
+package: github.com/lrodham/grpc-http-example/accounts
 import:
 - package: github.com/go-sql-driver/mysql
   version: ^1.3.0
 - package: github.com/google/jsonapi
 - package: github.com/jinzhu/gorm
   version: ^1.0.0
+- package: github.com/lukerodham/grpc-http-example
+  subpackages:
+  - proto-go/organisations
+  - proto-go/users
 - package: github.com/micro/go-micro
 - package: github.com/sipsynergy/go-sipsynergy
   subpackages:
   - utils
-- package: github.com/sipsynergy/proto-go
-  subpackages:
-  - organisations
-  - users
 - package: golang.org/x/crypto
   subpackages:
   - bcrypt

@@ -5,7 +5,7 @@ DOCKER_REGISTRY_HOST=sipsynergy
 VERSION=test
 
 build:
-	docker run --rm -v ${PWD}:/go/src/app -w /go/src/app -e GOOS=linux -e GOARCH=386 lrodham/golang-glide /bin/sh -c "glide install && go build" && \
+	docker run --rm -v ${PWD}:/go/src/app -w /go/src/app -e GOOS=linux -e GOARCH=386 lukerodham/golang-glide /bin/sh -c "glide install && go build" && \
     docker build -t ${DOCKER_REGISTRY_HOST}/${BINARY}:${VERSION} .
 
 start:

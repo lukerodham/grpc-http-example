@@ -8,7 +8,7 @@ import (
 	"golang.org/x/net/context"
 
 	"github.com/google/jsonapi"
-	"github.com/lrodham/grpc-http-example/proto-go/users"
+	"github.com/lukerodham/grpc-http-example/proto-go/users"
 	micro "github.com/micro/go-micro"
 	"github.com/sipsynergy/go-sipsynergy/utils"
 	"golang.org/x/crypto/bcrypt"

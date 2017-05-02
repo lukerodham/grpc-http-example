@@ -20,7 +20,7 @@ package users
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import organisations "github.com/lrodham/grpc-http-example/proto-go/organisations"
+import organisations "github.com/lukerodham/grpc-http-example/proto-go/organisations"
 
 import (
 	client "github.com/micro/go-micro/client"

@@ -1,6 +1,6 @@
 # /bin/bash
 
-PROTOPATH=$GOPATH/src/github.com/lrodham/grpc-http-example/proto
+PROTOPATH=$GOPATH/src/github.com/lukerodham/grpc-http-example/proto
 FILES=$PROTOPATH/*.proto
 
 for f in $FILES
